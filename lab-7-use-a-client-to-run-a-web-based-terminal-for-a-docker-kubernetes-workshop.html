@@ -1,0 +1,938 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Lab 7 - Use a client to run a web-based terminal for a docker/kubernetes workshop · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="lab-8-discover-customer-sentiment-from-product-reviews.html" />
+    
+    
+    <link rel="prev" href="lab-6-tent-purchase-predictor.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Lab 0 - Register for IBM Cloud (Call for Code)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="lab-1.html">
+            
+                <a href="lab-1.html">
+            
+                    
+                    Lab 1 - Answer the Call for Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="lab-2-fire-alarm-using-watson-visual-recognition.html">
+            
+                <a href="lab-2-fire-alarm-using-watson-visual-recognition.html">
+            
+                    
+                    Lab 2 - Forest Fire Detection Using Visual Recognition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="lab-4-bot-asset-exchange.html">
+            
+                <a href="lab-4-bot-asset-exchange.html">
+            
+                    
+                    Lab 3 - Bot Asset Exchange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="lab-5-model-asset-exchange.html">
+            
+                <a href="lab-5-model-asset-exchange.html">
+            
+                    
+                    Lab 4 - Model Asset Exchange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="lab-5-identify-cities-from-space.html">
+            
+                <a href="lab-5-identify-cities-from-space.html">
+            
+                    
+                    Lab 5 - Identify cities from space
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="lab-6-tent-purchase-predictor.html">
+            
+                <a href="lab-6-tent-purchase-predictor.html">
+            
+                    
+                    Lab 6 - Tent Purchase Predictor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="lab-7-use-a-client-to-run-a-web-based-terminal-for-a-docker-kubernetes-workshop.html">
+            
+                <a href="lab-7-use-a-client-to-run-a-web-based-terminal-for-a-docker-kubernetes-workshop.html">
+            
+                    
+                    Lab 7 - Use a client to run a web-based terminal for a docker/kubernetes workshop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="lab-8-discover-customer-sentiment-from-product-reviews.html">
+            
+                <a href="lab-8-discover-customer-sentiment-from-product-reviews.html">
+            
+                    
+                    Lab 8 - Discover customer sentiment from product reviews
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="lab-9-create-a-banking-chatbot.html">
+            
+                <a href="lab-9-create-a-banking-chatbot.html">
+            
+                    
+                    Lab 9 - Create a banking chatbot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="lab-10-uncover-insights-from-facebook-data-with-pixiedust-and-watson-services.html">
+            
+                <a href="lab-10-uncover-insights-from-facebook-data-with-pixiedust-and-watson-services.html">
+            
+                    
+                    Lab 10 - Uncover insights from Facebook data with PixieDust and Watson services
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="gitbook-link-and-qr-code.html">
+            
+                <a href="gitbook-link-and-qr-code.html">
+            
+                    
+                    GitBook Link and QR Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <a target="_blank" href="https://cognitiveclass.ai/courses/kubernetes-course/">
+            
+                    
+                    Optional : Kubernetes Course and Certification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <a target="_blank" href="https://cloud.ibm.com/docs/services/watson-knowledge-studio?topic=watson-knowledge-studio-wks_overview_full">
+            
+                    
+                    IBM Watson™ Knowledge Studio Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" >
+            
+                <a target="_blank" href="https://cloud.ibm.com/docs/services/discovery?topic=discovery-about">
+            
+                    
+                    IBM Watson™ Discovery Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Node-RED / Internet of Things (IoT)</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="internet-of-things-iot/introduction-to-node-red.html">
+            
+                <a href="internet-of-things-iot/introduction-to-node-red.html">
+            
+                    
+                    Introduction to node-RED
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="internet-of-things-iot/getting-node-red.html">
+            
+                <a href="internet-of-things-iot/getting-node-red.html">
+            
+                    
+                    Getting Node-RED
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="internet-of-things-iot/ibm-watson-node-setup.html">
+            
+                <a href="internet-of-things-iot/ibm-watson-node-setup.html">
+            
+                    
+                    Adding Nodes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="internet-of-things-iot/node-red-ai-text-to-speech.html">
+            
+                <a href="internet-of-things-iot/node-red-ai-text-to-speech.html">
+            
+                    
+                    Lab 1: AI - Text to Speech
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="internet-of-things-iot/acknoledgement.html">
+            
+                <a href="internet-of-things-iot/acknoledgement.html">
+            
+                    
+                    Acknowledgement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" >
+            
+                <a target="_blank" href="https://github.com/johnwalicki/TJBot-Node-RED">
+            
+                    
+                    TJBot-Node-RED examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" >
+            
+                <a target="_blank" href="https://nodered.org/">
+            
+                    
+                    Node-RED
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">IBM TJBot</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="ibm-tjbot/tjbot.html">
+            
+                <a href="ibm-tjbot/tjbot.html">
+            
+                    
+                    TJBot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="ibm-tjbot/teaching-tjbot-to-speak.html">
+            
+                <a href="ibm-tjbot/teaching-tjbot-to-speak.html">
+            
+                    
+                    Lab 1: Teaching TJBot to speak
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">IBM Blockchain Platform V2 Workshop</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="ibm-blockchain-platform/ibp.html">
+            
+                <a href="ibm-blockchain-platform/ibp.html">
+            
+                    
+                    Business blockchain concepts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="ibm-blockchain-platform/lab-0-fabcar-blockchain-sample-prerequisites.html">
+            
+                <a href="ibm-blockchain-platform/lab-0-fabcar-blockchain-sample-prerequisites.html">
+            
+                    
+                    Lab 0: FabCar Blockchain Sample - Prerequisites
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="ibm-blockchain-platform/lab-1-fabcar-blockchain-sample-create-ibm-cloud-services.html">
+            
+                <a href="ibm-blockchain-platform/lab-1-fabcar-blockchain-sample-create-ibm-cloud-services.html">
+            
+                    
+                    Lab 1: FabCar Blockchain Sample - Create IBM Cloud Kubernetes service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="ibm-blockchain-platform/lab-1-fabcar-blockchain-sample.html">
+            
+                <a href="ibm-blockchain-platform/lab-1-fabcar-blockchain-sample.html">
+            
+                    
+                    Lab 2: FabCar Blockchain Sample - Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="ibm-blockchain-platform/lab-3-fabcar-blockchain-sample-ibm-blockchain-platform-creation.html">
+            
+                <a href="ibm-blockchain-platform/lab-3-fabcar-blockchain-sample-ibm-blockchain-platform-creation.html">
+            
+                    
+                    Lab 3: FabCar Blockchain Sample - IBM Blockchain Platform Creation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="ibm-blockchain-platform/lab-4-fabcar-blockchain-sample-build-a-network/">
+            
+                <a href="ibm-blockchain-platform/lab-4-fabcar-blockchain-sample-build-a-network/">
+            
+                    
+                    Lab 4: FabCar Blockchain Sample - Build a Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.6.1" data-path="ibm-blockchain-platform/lab-4-fabcar-blockchain-sample-build-a-network/lab-4-fabcar-blockchain-sample-build-network.html">
+            
+                <a href="ibm-blockchain-platform/lab-4-fabcar-blockchain-sample-build-a-network/lab-4-fabcar-blockchain-sample-build-network.html">
+            
+                    
+                    Lab 4a: FabCar Blockchain Sample - Build a Network (1/3)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.2" data-path="ibm-blockchain-platform/lab-4-fabcar-blockchain-sample-build-a-network/lab-4-fabcar-blockchain-sample-build-a-network-2-3.html">
+            
+                <a href="ibm-blockchain-platform/lab-4-fabcar-blockchain-sample-build-a-network/lab-4-fabcar-blockchain-sample-build-a-network-2-3.html">
+            
+                    
+                    Lab 4b: FabCar Blockchain Sample - Build a Network (2/3)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.3" data-path="ibm-blockchain-platform/lab-4-fabcar-blockchain-sample-build-a-network/lab-4c-fabcar-blockchain-sample-build-a-network-3-3.html">
+            
+                <a href="ibm-blockchain-platform/lab-4-fabcar-blockchain-sample-build-a-network/lab-4c-fabcar-blockchain-sample-build-a-network-3-3.html">
+            
+                    
+                    Lab 4c: FabCar Blockchain Sample - Build a Network (3/3)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="ibm-blockchain-platform/lab-5-fabcar-blockchain-sample/">
+            
+                <a href="ibm-blockchain-platform/lab-5-fabcar-blockchain-sample/">
+            
+                    
+                    Lab 5: FabCar Blockchain Sample - Setup
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.7.1" data-path="ibm-blockchain-platform/lab-5-fabcar-blockchain-sample/lab-2-fabcar-blockchain-sample-setup.html">
+            
+                <a href="ibm-blockchain-platform/lab-5-fabcar-blockchain-sample/lab-2-fabcar-blockchain-sample-setup.html">
+            
+                    
+                    Lab 5a: FabCar Blockchain Sample - VS code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.2" data-path="ibm-blockchain-platform/lab-5-fabcar-blockchain-sample/lab-5b-deploy-fabcar-smart-contract-on-the-network.html">
+            
+                <a href="ibm-blockchain-platform/lab-5-fabcar-blockchain-sample/lab-5b-deploy-fabcar-smart-contract-on-the-network.html">
+            
+                    
+                    Lab 5b: Deploy FabCar Smart Contract on the network
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="ibm-blockchain-platform/lab-6-connect-application-to-the-network.html">
+            
+                <a href="ibm-blockchain-platform/lab-6-connect-application-to-the-network.html">
+            
+                    
+                    Lab 6: Connect application to the network
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="ibm-blockchain-platform/lab-7-run-the-application.html">
+            
+                <a href="ibm-blockchain-platform/lab-7-run-the-application.html">
+            
+                    
+                    Lab 7: Run the application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" >
+            
+                <a target="_blank" href="https://developer.ibm.com/tutorials/cl-ibm-blockchain-101-quick-start-guide-for-developers-bluemix-trs/#start">
+            
+                    
+                    IBM Blockchain 101
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" >
+            
+                <a target="_blank" href="https://developer.ibm.com/patterns/category/blockchain/">
+            
+                    
+                    Blockchain Code Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Lab 7 - Use a client to run a web-based terminal for a docker/kubernetes workshop</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="lab-7---use-a-client-to-run-a-web-based-terminal-for-a-dockerkubernetes-workshop">Lab 7 - Use a client to run a web-based terminal for a docker/kubernetes workshop</h1>
+<h3 id="how-to-make-a-web-based-terminal-for-a-developer-workshop">How to make a web-based terminal for a developer workshop</h3>
+<p>Do you want to run a hands-on workshop with developers on client site? Do the developers who are participating have zero ability to install anything to run the workshop on their machines? Can they access a website with a signed TLS cert from a CA? Well then this is the tutorial for you!</p>
+<p>This will set up a fully functioning bash shell inside an ubuntu container for you, with the following things pre-installed:</p>
+<ul>
+<li>Docker</li>
+<li>Kubectl</li>
+<li>Helm</li>
+<li>IBM Cloud CLI</li>
+<li>Java</li>
+</ul>
+<p>Additionally, this gives you the ability to install just about any other runtime you&apos;d like for a multitude of workshops, including:</p>
+<ul>
+<li>Node.js (Blockchain workshops)</li>
+<li>Python (Machine Learning workshops)</li>
+<li>Swift (Best workshops)</li>
+</ul>
+<p><a href="https://github.ibm.com/IBMCode/Client-Advocacy/blob/master/images/working-web-terminal.png" target="_blank"><img src="https://github.ibm.com/IBMCode/Client-Advocacy/raw/master/images/working-web-terminal.png" alt=""></a></p>
+<p>You can configure this to set up as many terminals as you want for as many people as you want (within reason), and each participant will have their own persistent storage for Docker images and their file system.</p>
+<h4 id="getting-started">Getting Started</h4>
+<p>You&apos;ll need to have access to a Kubernetes cluster, and that Kubernetes cluster must be able to use a remote image from Dockerhub. Additionally, this cluster must be able to configure an ingress controller (free IKS will not work for setting up DNS and TLS certs).</p>
+<p>You should have answers to the following questions:</p>
+<ul>
+<li>How many people are in my workshop?</li>
+<li>Can they access the url <a href="https://testing-cluster.us-east.containers.appdomain.cloud/" target="_blank">https://testing-cluster.us-east.containers.appdomain.cloud/</a> from their machines?</li>
+<li>Has everyone who will be participating in the workshop signed up for an IBM Cloud account?</li>
+</ul>
+<p>Once you have these answers, you can proceed. This tutorial will assume you are using a cluster on the IKS.</p>
+<h4 id="maintenance">Maintenance</h4>
+<p>If you are interested in contributing to this facility:</p>
+<p><strong>GitHub</strong>: <a href="https://github.com/IBMAppModernization/web-terminal" target="_blank">https://github.com/IBMAppModernization/web-terminal</a><br><strong>DockerHub</strong>: <a href="https://hub.docker.com/r/ibmappmodernization/web-terminal" target="_blank">https://hub.docker.com/r/ibmappmodernization/web-terminal</a></p>
+<p>Please get in touch with <a href="https://github.ibm.com/David-Okun" target="_blank">David Okun</a> or <a href="https://github.ibm.com/Tim-Robinson" target="_blank">Tim Robinson</a> if you have questions.</p>
+<h4 id="step-1">Step 1</h4>
+<p>Provision a Kubernetes cluster. Again, if you are using the IKS, you cannot use the free cluster, as the free cluster:</p>
+<ul>
+<li>can not leverage a persistent volume</li>
+<li>can not leverage an ingress controller</li>
+</ul>
+<p>In Terminal, log into IBM Cloud with <code>ibmcloud login</code>. Run <code>ibmcloud ks clusters</code> to get the name of your cluster:</p>
+<pre><code class="lang-text">testing-cluster           bkss2low0aucnromsrm0               normal   2 weeks ago   1         Washington D.C.   1.13.8_1529   dokun-personal
+</code></pre>
+<p>The name of your cluster, in this instance, is <code>testing-cluster</code>.</p>
+<h4 id="step-2">Step 2</h4>
+<p>Next, get the details of DNS and the TLS secret on your cluster with the command <code>ibmcloud ks cluster-get --cluster testing-cluster | grep Ingress</code>. Your output should look like this:</p>
+<pre><code class="lang-text">Ingress Subdomain:              testing-cluster.us-east.containers.appdomain.cloud
+Ingress Secret:                 testing-cluster
+</code></pre>
+<p>Keep track of these values for later.</p>
+<h4 id="step-3">Step 3</h4>
+<p>Run the command <code>git clone https://github.com/IBMAppModernization/web-terminal.git</code>, then <code>cd web-terminal</code>. First, open <code>values.yaml</code> in a text editor of your choice. Make the following changes:</p>
+<ul>
+<li><code>participantCount</code>: this should be a number, and will set up that many terminal instances at <code>/term1</code>, <code>/term2</code>, etc...</li>
+<li><code>tlsSecret</code>: the name of your TLS secret from Step 2</li>
+<li><code>fullDomain</code>: the full domain of your cluster from Step 2</li>
+<li><code>repository</code>: by default, this should be <code>ibmappmodernization/web-terminal</code> to use our Docker image, but feel free to use your own if you have another image</li>
+<li><code>tag</code>: default should be <code>jdk-8-0.2.0</code>, but feel free to check out the available tags <a href="https://hub.docker.com/r/ibmappmodernization/web-terminal/tags" target="_blank">here</a></li>
+</ul>
+<p>Save your file.</p>
+<h4 id="step-4">Step 4</h4>
+<p>Connect to your Kubernetes cluster. To do this, open Terminal and enter the following commands:</p>
+<pre><code class="lang-text">ibmcloud ks clusters
+</code></pre>
+<p>Find the name of your cluster, then enter the following command:</p>
+<pre><code class="lang-text">ibmcloud ks cluster-config your-cluster-name
+</code></pre>
+<p>You will see a line in the output that starts with <code>export KUBECONFIG=</code>. Copy and paste this whole line, then hit enter in Terminal. Next, enter the following commands:</p>
+<pre><code class="lang-text">kubectl cluster-info
+kubectl get all
+</code></pre>
+<p>You should see that you are connected to your cluster.</p>
+<h4 id="step-5">Step 5</h4>
+<p><strong>Note</strong>: If you have already set up Helm, skip to Step 6.</p>
+<p><a href="https://helm.sh/" target="_blank">Helm</a> is a package manager that you will use to install this web terminal in one line. Helm is not installed on IKS clusters by default, so you need to set up your cluster one time to use it. You will enter four commands in the following sequence:</p>
+<pre><code class="lang-text">kubectl create serviceaccount --namespace kube-system tiller
+kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
+helm init --upgrade
+kubectl patch deploy --namespace kube-system tiller-deploy -p &apos;{&quot;spec&quot;:{&quot;template&quot;:{&quot;spec&quot;:{&quot;serviceAccount&quot;:&quot;tiller&quot;}}}}&apos;
+</code></pre>
+<p>After this, you need to wait for Tiller, the server-side component of Helm, to finish installing. This usually takes 1-2 minutes. To confirm you have installed Helm correctly, enter <code>helm list</code>. If you get no output as a result, you are ready.</p>
+<h4 id="step-6">Step 6</h4>
+<p>In Terminal, ensure that you are at the root directory of <code>web-terminal</code> by typing <code>ls</code>. You should see that you have <code>Chart.yaml</code> and <code>templates/</code> in the output. Next, enter the following command:</p>
+<pre><code class="lang-text">helm install --name web-terminal .
+</code></pre>
+<p>And that&apos;s it! You should see output that indicates all of the resources deployed to your kubernetes cluster. Depending on how many participants are in your workshop, this could vary in setup time anywhere from 30 seconds to 4 minutes. After making some coffee, type <code>kubectl get all</code> to see output that looks like so:</p>
+<pre><code class="lang-text">NAME                              READY   STATUS    RESTARTS   AGE
+pod/terminal-1-7c5587dc9d-zcd79   2/2     Running   0          90s
+pod/terminal-2-fd64bf486-427pr    2/2     Running   0          90s
+pod/terminal-3-5b4c9f9fd-2582p    2/2     Running   0          90s
+pod/terminal-4-79765f5fc4-zkdqp   2/2     Running   0          90s
+pod/terminal-5-868789d7d-f8vdm    2/2     Running   0          90s
+
+NAME                         TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
+service/kubernetes           ClusterIP   172.21.0.1       &lt;none&gt;        443/TCP        26d
+service/terminal-service-1   NodePort    172.21.103.84    &lt;none&gt;        80:30233/TCP   90s
+service/terminal-service-2   NodePort    172.21.207.247   &lt;none&gt;        80:32715/TCP   90s
+service/terminal-service-3   NodePort    172.21.142.141   &lt;none&gt;        80:30640/TCP   90s
+service/terminal-service-4   NodePort    172.21.6.49      &lt;none&gt;        80:32648/TCP   90s
+service/terminal-service-5   NodePort    172.21.122.25    &lt;none&gt;        80:31274/TCP   90s
+
+NAME                         READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/terminal-1   1/1     1            1           90s
+deployment.apps/terminal-2   1/1     1            1           90s
+deployment.apps/terminal-3   1/1     1            1           90s
+deployment.apps/terminal-4   1/1     1            1           90s
+deployment.apps/terminal-5   1/1     1            1           90s
+
+NAME                                    DESIRED   CURRENT   READY   AGE
+replicaset.apps/terminal-1-7c5587dc9d   1         1         1       90s
+replicaset.apps/terminal-2-fd64bf486    1         1         1       90s
+replicaset.apps/terminal-3-5b4c9f9fd    1         1         1       90s
+replicaset.apps/terminal-4-79765f5fc4   1         1         1       90s
+replicaset.apps/terminal-5-868789d7d    1         1         1       90s
+</code></pre>
+<p>Next, type <code>kubectl describe ing</code> to observe how ingress is set up on your cluster for this app:</p>
+<pre><code class="lang-text">Name:             terminal-ingress
+Namespace:        default
+Address:          169.45.193.202
+Default backend:  default-http-backend:80 (&lt;none&gt;)
+TLS:
+  testing-cluster terminates testing-cluster.us-east.containers.appdomain.cloud
+Rules:
+  Host                                                Path  Backends
+  ----                                                ----  --------
+  testing-cluster.us-east.containers.appdomain.cloud
+                                                      /term1   terminal-service-1:80 (172.30.237.84:7681)
+                                                      /term2   terminal-service-2:80 (172.30.237.86:7681)
+                                                      /term3   terminal-service-3:80 (172.30.237.109:7681)
+                                                      /term4   terminal-service-4:80 (172.30.237.113:7681)
+                                                      /term5   terminal-service-5:80 (172.30.237.88:7681)
+Annotations:
+  ingress.bluemix.net/proxy-connect-timeout:  serviceName=terminal-service-1 timeout=75s;serviceName=terminal-service-2 timeout=75s;serviceName=terminal-service-3 timeout=75s;serviceName=terminal-service-4 timeout=75s;serviceName=terminal-service-5 timeout=75s;
+  ingress.bluemix.net/proxy-read-timeout:     serviceName=terminal-service-1 timeout=3600s;serviceName=terminal-service-2 timeout=3600s;serviceName=terminal-service-3 timeout=3600s;serviceName=terminal-service-4 timeout=3600s;serviceName=terminal-service-5 timeout=3600s;
+  ingress.bluemix.net/rewrite-path:           serviceName=terminal-service-1 rewrite=/;serviceName=terminal-service-2 rewrite=/;serviceName=terminal-service-3 rewrite=/;serviceName=terminal-service-4 rewrite=/;serviceName=terminal-service-5 rewrite=/;
+  kubernetes.io/ingress.class:                nginx
+Events:
+  Type    Reason   Age    From                                                 Message
+  ----    ------   ----   ----                                                 -------
+  Normal  Success  2m29s  public-crbkss2low0aucnromsrm0-alb1-6678549cc7-nzb5p  Successfully applied ingress resource.
+  Normal  Success  95s    public-crbkss2low0aucnromsrm0-alb1-6678549cc7-nzb5p  Successfully applied ingress resource.
+</code></pre>
+<p>This indicates that the following URLs are ready to access:</p>
+<ul>
+<li><code>https://testing-cluster.us-east.containers.appdomain.cloud/term1</code></li>
+<li><code>https://testing-cluster.us-east.containers.appdomain.cloud/term2</code></li>
+<li><code>https://testing-cluster.us-east.containers.appdomain.cloud/term3</code></li>
+<li><code>https://testing-cluster.us-east.containers.appdomain.cloud/term4</code></li>
+<li><code>https://testing-cluster.us-east.containers.appdomain.cloud/term5</code></li>
+</ul>
+<p>Each terminal has its own file system and Docker engine, meaning that workshop participants never have to use another terminal as long as they are in the workshop.</p>
+<p><strong>IMPORTANT NOTE:</strong> When participants begin the workshop, make sure they navigate to <code>/data</code> in their root directory, and work with all files from this directory. This has read and write permissions, and will allow them to use whatever they want without issue.</p>
+<h4 id="step-7-cleanup">Step 7 (cleanup)</h4>
+<p>In terminal, enter the following command:</p>
+<pre><code class="lang-text">helm delete --purge web-terminal
+</code></pre>
+<p>After about 1 minute, enter <code>kubectl get all</code> to ensure that all related resources have been cleaned up.</p>
+<h3 id="warnings">Warnings</h3>
+<p>There are some normal considerations to using this system.</p>
+<ol>
+<li>The IKS shared VMs only have 100GB of file storage space available. For a 5 person workshop, this is not a big deal, but as the number of workshop participants increase, the shared space will decrease. Be mindful of this as you scale this, and encourage pair programming for larger groups.</li>
+<li>If multiple people attempt to access one URL, the websocket system can crash the pod. It will restart, but it can take 1-3 minutes sometimes depending on connectivity. Encourage participants to keep their browser window open throughout the workshop and not close it or refresh the page.</li>
+<li>The page <strong>will</strong> auto-refresh once per hour if no activity is detected. Filesystems, IBM Cloud CLI sessions, and Docker images/containers will persist, but history can be lost when this app refreshes. This isn&apos;t a major issue, but something to be mindful of.</li>
+</ol>
+<h4 id="questions">Questions</h4>
+<p>You can find us on Slack @David Okun or @Tim Robinson or you can email us <a href="mailto:david.okun@ibm.com" target="_blank">here</a> or <a href="mailto:timro@us.ibm.com" target="_blank">here</a>.</p>
+<p><a href="https://w3idprofile.sso.ibm.com/password/createpwd_lookup_otp.wss" target="_blank">Forgot password?</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="lab-6-tent-purchase-predictor.html" class="navigation navigation-prev " aria-label="Previous page: Lab 6 - Tent Purchase Predictor">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="lab-8-discover-customer-sentiment-from-product-reviews.html" class="navigation navigation-next " aria-label="Next page: Lab 8 - Discover customer sentiment from product reviews">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Lab 7 - Use a client to run a web-based terminal for a docker/kubernetes workshop","level":"1.8","depth":1,"next":{"title":"Lab 8 - Discover customer sentiment from product reviews","level":"1.9","depth":1,"path":"lab-8-discover-customer-sentiment-from-product-reviews.md","ref":"lab-8-discover-customer-sentiment-from-product-reviews.md","articles":[]},"previous":{"title":"Lab 6 - Tent Purchase Predictor","level":"1.7","depth":1,"path":"lab-6-tent-purchase-predictor.md","ref":"lab-6-tent-purchase-predictor.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lab-7-use-a-client-to-run-a-web-based-terminal-for-a-docker-kubernetes-workshop.md","mtime":"2020-01-09T03:45:03.284Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-09T04:00:53.333Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

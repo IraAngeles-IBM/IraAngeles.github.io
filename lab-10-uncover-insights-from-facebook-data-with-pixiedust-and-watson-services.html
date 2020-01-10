@@ -1,0 +1,1021 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Lab 10 - Uncover insights from Facebook data with PixieDust and Watson services · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="gitbook-link-and-qr-code.html" />
+    
+    
+    <link rel="prev" href="lab-9-create-a-banking-chatbot.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Lab 0 - Register for IBM Cloud (Call for Code)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="lab-1.html">
+            
+                <a href="lab-1.html">
+            
+                    
+                    Lab 1 - Answer the Call for Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="lab-2-fire-alarm-using-watson-visual-recognition.html">
+            
+                <a href="lab-2-fire-alarm-using-watson-visual-recognition.html">
+            
+                    
+                    Lab 2 - Forest Fire Detection Using Visual Recognition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="lab-4-bot-asset-exchange.html">
+            
+                <a href="lab-4-bot-asset-exchange.html">
+            
+                    
+                    Lab 3 - Bot Asset Exchange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="lab-5-model-asset-exchange.html">
+            
+                <a href="lab-5-model-asset-exchange.html">
+            
+                    
+                    Lab 4 - Model Asset Exchange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="lab-5-identify-cities-from-space.html">
+            
+                <a href="lab-5-identify-cities-from-space.html">
+            
+                    
+                    Lab 5 - Identify cities from space
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="lab-6-tent-purchase-predictor.html">
+            
+                <a href="lab-6-tent-purchase-predictor.html">
+            
+                    
+                    Lab 6 - Tent Purchase Predictor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="lab-7-use-a-client-to-run-a-web-based-terminal-for-a-docker-kubernetes-workshop.html">
+            
+                <a href="lab-7-use-a-client-to-run-a-web-based-terminal-for-a-docker-kubernetes-workshop.html">
+            
+                    
+                    Lab 7 - Use a client to run a web-based terminal for a docker/kubernetes workshop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="lab-8-discover-customer-sentiment-from-product-reviews.html">
+            
+                <a href="lab-8-discover-customer-sentiment-from-product-reviews.html">
+            
+                    
+                    Lab 8 - Discover customer sentiment from product reviews
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="lab-9-create-a-banking-chatbot.html">
+            
+                <a href="lab-9-create-a-banking-chatbot.html">
+            
+                    
+                    Lab 9 - Create a banking chatbot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11" data-path="lab-10-uncover-insights-from-facebook-data-with-pixiedust-and-watson-services.html">
+            
+                <a href="lab-10-uncover-insights-from-facebook-data-with-pixiedust-and-watson-services.html">
+            
+                    
+                    Lab 10 - Uncover insights from Facebook data with PixieDust and Watson services
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="gitbook-link-and-qr-code.html">
+            
+                <a href="gitbook-link-and-qr-code.html">
+            
+                    
+                    GitBook Link and QR Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <a target="_blank" href="https://cognitiveclass.ai/courses/kubernetes-course/">
+            
+                    
+                    Optional : Kubernetes Course and Certification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <a target="_blank" href="https://cloud.ibm.com/docs/services/watson-knowledge-studio?topic=watson-knowledge-studio-wks_overview_full">
+            
+                    
+                    IBM Watson™ Knowledge Studio Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" >
+            
+                <a target="_blank" href="https://cloud.ibm.com/docs/services/discovery?topic=discovery-about">
+            
+                    
+                    IBM Watson™ Discovery Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Node-RED / Internet of Things (IoT)</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="internet-of-things-iot/introduction-to-node-red.html">
+            
+                <a href="internet-of-things-iot/introduction-to-node-red.html">
+            
+                    
+                    Introduction to node-RED
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="internet-of-things-iot/getting-node-red.html">
+            
+                <a href="internet-of-things-iot/getting-node-red.html">
+            
+                    
+                    Getting Node-RED
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="internet-of-things-iot/ibm-watson-node-setup.html">
+            
+                <a href="internet-of-things-iot/ibm-watson-node-setup.html">
+            
+                    
+                    Adding Nodes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="internet-of-things-iot/node-red-ai-text-to-speech.html">
+            
+                <a href="internet-of-things-iot/node-red-ai-text-to-speech.html">
+            
+                    
+                    Lab 1: AI - Text to Speech
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="internet-of-things-iot/acknoledgement.html">
+            
+                <a href="internet-of-things-iot/acknoledgement.html">
+            
+                    
+                    Acknowledgement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" >
+            
+                <a target="_blank" href="https://github.com/johnwalicki/TJBot-Node-RED">
+            
+                    
+                    TJBot-Node-RED examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" >
+            
+                <a target="_blank" href="https://nodered.org/">
+            
+                    
+                    Node-RED
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">IBM TJBot</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="ibm-tjbot/tjbot.html">
+            
+                <a href="ibm-tjbot/tjbot.html">
+            
+                    
+                    TJBot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="ibm-tjbot/teaching-tjbot-to-speak.html">
+            
+                <a href="ibm-tjbot/teaching-tjbot-to-speak.html">
+            
+                    
+                    Lab 1: Teaching TJBot to speak
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">IBM Blockchain Platform V2 Workshop</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="ibm-blockchain-platform/ibp.html">
+            
+                <a href="ibm-blockchain-platform/ibp.html">
+            
+                    
+                    Business blockchain concepts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="ibm-blockchain-platform/lab-0-fabcar-blockchain-sample-prerequisites.html">
+            
+                <a href="ibm-blockchain-platform/lab-0-fabcar-blockchain-sample-prerequisites.html">
+            
+                    
+                    Lab 0: FabCar Blockchain Sample - Prerequisites
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="ibm-blockchain-platform/lab-1-fabcar-blockchain-sample-create-ibm-cloud-services.html">
+            
+                <a href="ibm-blockchain-platform/lab-1-fabcar-blockchain-sample-create-ibm-cloud-services.html">
+            
+                    
+                    Lab 1: FabCar Blockchain Sample - Create IBM Cloud Kubernetes service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="ibm-blockchain-platform/lab-1-fabcar-blockchain-sample.html">
+            
+                <a href="ibm-blockchain-platform/lab-1-fabcar-blockchain-sample.html">
+            
+                    
+                    Lab 2: FabCar Blockchain Sample - Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="ibm-blockchain-platform/lab-3-fabcar-blockchain-sample-ibm-blockchain-platform-creation.html">
+            
+                <a href="ibm-blockchain-platform/lab-3-fabcar-blockchain-sample-ibm-blockchain-platform-creation.html">
+            
+                    
+                    Lab 3: FabCar Blockchain Sample - IBM Blockchain Platform Creation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="ibm-blockchain-platform/lab-4-fabcar-blockchain-sample-build-a-network/">
+            
+                <a href="ibm-blockchain-platform/lab-4-fabcar-blockchain-sample-build-a-network/">
+            
+                    
+                    Lab 4: FabCar Blockchain Sample - Build a Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.6.1" data-path="ibm-blockchain-platform/lab-4-fabcar-blockchain-sample-build-a-network/lab-4-fabcar-blockchain-sample-build-network.html">
+            
+                <a href="ibm-blockchain-platform/lab-4-fabcar-blockchain-sample-build-a-network/lab-4-fabcar-blockchain-sample-build-network.html">
+            
+                    
+                    Lab 4a: FabCar Blockchain Sample - Build a Network (1/3)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.2" data-path="ibm-blockchain-platform/lab-4-fabcar-blockchain-sample-build-a-network/lab-4-fabcar-blockchain-sample-build-a-network-2-3.html">
+            
+                <a href="ibm-blockchain-platform/lab-4-fabcar-blockchain-sample-build-a-network/lab-4-fabcar-blockchain-sample-build-a-network-2-3.html">
+            
+                    
+                    Lab 4b: FabCar Blockchain Sample - Build a Network (2/3)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.3" data-path="ibm-blockchain-platform/lab-4-fabcar-blockchain-sample-build-a-network/lab-4c-fabcar-blockchain-sample-build-a-network-3-3.html">
+            
+                <a href="ibm-blockchain-platform/lab-4-fabcar-blockchain-sample-build-a-network/lab-4c-fabcar-blockchain-sample-build-a-network-3-3.html">
+            
+                    
+                    Lab 4c: FabCar Blockchain Sample - Build a Network (3/3)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="ibm-blockchain-platform/lab-5-fabcar-blockchain-sample/">
+            
+                <a href="ibm-blockchain-platform/lab-5-fabcar-blockchain-sample/">
+            
+                    
+                    Lab 5: FabCar Blockchain Sample - Setup
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.7.1" data-path="ibm-blockchain-platform/lab-5-fabcar-blockchain-sample/lab-2-fabcar-blockchain-sample-setup.html">
+            
+                <a href="ibm-blockchain-platform/lab-5-fabcar-blockchain-sample/lab-2-fabcar-blockchain-sample-setup.html">
+            
+                    
+                    Lab 5a: FabCar Blockchain Sample - VS code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.2" data-path="ibm-blockchain-platform/lab-5-fabcar-blockchain-sample/lab-5b-deploy-fabcar-smart-contract-on-the-network.html">
+            
+                <a href="ibm-blockchain-platform/lab-5-fabcar-blockchain-sample/lab-5b-deploy-fabcar-smart-contract-on-the-network.html">
+            
+                    
+                    Lab 5b: Deploy FabCar Smart Contract on the network
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="ibm-blockchain-platform/lab-6-connect-application-to-the-network.html">
+            
+                <a href="ibm-blockchain-platform/lab-6-connect-application-to-the-network.html">
+            
+                    
+                    Lab 6: Connect application to the network
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="ibm-blockchain-platform/lab-7-run-the-application.html">
+            
+                <a href="ibm-blockchain-platform/lab-7-run-the-application.html">
+            
+                    
+                    Lab 7: Run the application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" >
+            
+                <a target="_blank" href="https://developer.ibm.com/tutorials/cl-ibm-blockchain-101-quick-start-guide-for-developers-bluemix-trs/#start">
+            
+                    
+                    IBM Blockchain 101
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" >
+            
+                <a target="_blank" href="https://developer.ibm.com/patterns/category/blockchain/">
+            
+                    
+                    Blockchain Code Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Lab 10 - Uncover insights from Facebook data with PixieDust and Watson services</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="lab-10---uncover-insights-from-facebook-data-with-pixiedust-and-watson-services">Lab 10 - Uncover insights from Facebook data with PixieDust and Watson services</h1>
+<p>In this code pattern, we will use a Jupyter notebook to glean insights from a vast body of unstructured data. We&apos;ll start with data exported from Facebook Analytics. We&apos;ll enrich the data with Watson&#x2019;s Natural Language Understanding (NLU), Tone Analyzer and Visual Recognition. Credit goes to <a href="https://www.linkedin.com/in/anna-quincy-25042957" target="_blank">Anna Quincy</a> and <a href="https://www.linkedin.com/in/tyler-andersen-2bb82336" target="_blank">Tyler Andersen</a> for providing the initial notebook design.</p>
+<p>We&apos;ll use the enriched data to answer questions like:</p>
+<blockquote>
+<p>What sentiment is most prevalent in the posts with the highest engagement performance?</p>
+<p>What are the relationships between social tone of article text, the main article entity, and engagement performance?</p>
+</blockquote>
+<p>These types of insights are especially beneficial for marketing analysts who are interested in understanding and improving brand perception, product performance, customer satisfaction, and ways to engage their audiences.</p>
+<p>It is important to note that this code pattern is meant to be used as a guided experiment, rather than an application with one set output. The standard Facebook Analytics export features text from posts, articles, and thumbnails, along with standard Facebook performance metrics such as likes, shares, and impressions. This unstructured content was then enriched with Watson APIs to extract keywords, entities, sentiment, and tone.</p>
+<p>After data is enriched with Watson APIs, there are several different types of ways to analyze it. Watson Studio provides a robust, yet flexible method of exploring the unstructured, enriched Facebook content.</p>
+<p>This code pattern provides mock Facebook data, a notebook, and comes with several pre-built visualizations to jump start you with uncovering hidden insights.</p>
+<p>When the reader has completed this code pattern, they will understand how to:</p>
+<ul>
+<li>Read external data in to a Jupyter Notebook via Object Storage and pandas DataFrames.</li>
+<li>Use a Jupyter notebook and Watson APIs to enrich unstructured data using:<ul>
+<li><a href="https://www.ibm.com/watson/services/natural-language-understanding/" target="_blank">Natural Language Understanding</a></li>
+<li><a href="https://www.ibm.com/watson/services/tone-analyzer/" target="_blank">Tone Analyzer</a></li>
+<li><a href="https://www.ibm.com/watson/services/visual-recognition/" target="_blank">Visual Recognition</a></li>
+</ul>
+</li>
+<li>Write data from a pandas DataFrame in a Jupyter Notebook out to a file in Object Storage.</li>
+<li>Visualize and explore the enriched data with <a href="https://github.com/pixiedust/pixiedust" target="_blank">PixieDust</a>.</li>
+</ul>
+<h3 id=""> </h3>
+<h3 id="flow">Flow</h3>
+<p><a href="https://github.com/IBM/pixiedust-facebook-analysis/blob/master/doc/source/images/architecture.png" target="_blank"><img src="https://github.com/IBM/pixiedust-facebook-analysis/raw/master/doc/source/images/architecture.png" alt="architecture"></a></p>
+<ol>
+<li>A CSV file exported from Facebook Analytics is added to Object Storage.</li>
+<li>Generated code makes the file accessible as a pandas DataFrame.</li>
+<li>The data is enriched with Natural Language Understanding.</li>
+<li>The data is enriched with Tone Analyzer.</li>
+<li>The data is enriched with Visual Recognition.</li>
+<li>The enriched data can be explored with PixieDust to uncover hidden insights and create graphics to highlight them.</li>
+</ol>
+<h3 id=""> </h3>
+<h3 id="included-components">Included components</h3>
+<ul>
+<li><a href="https://dataplatform.cloud.ibm.com" target="_blank">IBM Watson Studio</a>: Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.</li>
+<li><a href="https://cloud.ibm.com/catalog/services/cloud-object-storage" target="_blank">IBM Cloud Object Storage</a>: An IBM Cloud service that provides an unstructured cloud data store to build and deliver cost effective apps and services with high reliability and fast speed to market.</li>
+<li><a href="https://www.ibm.com/watson/services/natural-language-understanding/" target="_blank">Watson Natural Language Understanding</a>: Natural language processing for advanced text analysis.</li>
+<li><a href="https://www.ibm.com/watson/services/tone-analyzer/" target="_blank">Watson Tone Analyzer</a>: Uses linguistic analysis to detect communication tones in written text.</li>
+<li><a href="https://www.ibm.com/watson/services/visual-recognition/" target="_blank">Watson Visual Recognition</a>: Understand image content.</li>
+<li><a href="https://jupyter.org/" target="_blank">Jupyter Notebooks</a>: An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.</li>
+<li><a href="https://github.com/pixiedust/pixiedust" target="_blank">PixieDust</a>: PixieDust is an open source helper library that works as an add-on to Jupyter notebooks to improve the user experience of working with data.</li>
+<li><a href="https://pandas.pydata.org/" target="_blank">pandas</a>: A Python library providing high-performance, easy-to-use data structures.</li>
+<li><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">Beautiful Soup</a>: Beautiful Soup is a Python library for pulling data out of HTML and XML files.</li>
+</ul>
+<h3 id=""> </h3>
+<h3 id="watch-the-video">Watch the Video</h3>
+<p><a href="https://www.youtube.com/watch?v=UIkjFo9o3vI" target="_blank"><img src="https://camo.githubusercontent.com/ee68b50f15016e2d2fb078aecd3004699eec2560/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f55496b6a466f396f3376492f302e6a7067" alt="video"></a></p>
+<h3 id=""> </h3>
+<h3 id="steps">Steps</h3>
+<p>Follow these steps to setup and run this code pattern. The steps are described in detail below.</p>
+<ol>
+<li><a href="https://github.com/IBM/pixiedust-facebook-analysis?cm_sp=IBMCode-_-discover-hidden-facebook-usage-insights-_-Get-the-Code#1-create-a-new-watson-studio-project" target="_blank">Create a new Watson Studio project</a></li>
+<li><a href="https://github.com/IBM/pixiedust-facebook-analysis?cm_sp=IBMCode-_-discover-hidden-facebook-usage-insights-_-Get-the-Code#2-add-services-to-the-project" target="_blank">Add services to the project</a></li>
+<li><a href="https://github.com/IBM/pixiedust-facebook-analysis?cm_sp=IBMCode-_-discover-hidden-facebook-usage-insights-_-Get-the-Code#3-create-the-notebook-in-watson-studio" target="_blank">Create the notebook in Watson Studio</a></li>
+<li><a href="https://github.com/IBM/pixiedust-facebook-analysis?cm_sp=IBMCode-_-discover-hidden-facebook-usage-insights-_-Get-the-Code#4-add-credentials" target="_blank">Add credentials</a></li>
+<li><a href="https://github.com/IBM/pixiedust-facebook-analysis?cm_sp=IBMCode-_-discover-hidden-facebook-usage-insights-_-Get-the-Code#5-add-the-csv-file" target="_blank">Add the CSV file</a></li>
+<li><a href="https://github.com/IBM/pixiedust-facebook-analysis?cm_sp=IBMCode-_-discover-hidden-facebook-usage-insights-_-Get-the-Code#6-run-the-notebook" target="_blank">Run the notebook</a></li>
+<li><a href="https://github.com/IBM/pixiedust-facebook-analysis?cm_sp=IBMCode-_-discover-hidden-facebook-usage-insights-_-Get-the-Code#7-analyze-the-results" target="_blank">Analyze the results</a></li>
+<li><a href="https://github.com/IBM/pixiedust-facebook-analysis?cm_sp=IBMCode-_-discover-hidden-facebook-usage-insights-_-Get-the-Code#8-save-your-work" target="_blank">Save your work</a></li>
+</ol>
+<h4 id=""> </h4>
+<h4 id="1-create-a-new-watson-studio-project">1. Create a new Watson Studio project</h4>
+<ul>
+<li>Log into IBM&apos;s <a href="https://dataplatform.cloud.ibm.com" target="_blank">Watson Studio</a>. Once in, you&apos;ll land on the dashboard.</li>
+<li>Create a new project by clicking <code>New project +</code> and then click on <code>Create an empty project</code>.</li>
+<li><p>Enter a name for the project name and click <code>Create</code>.</p>
+<blockquote>
+<p><strong>NOTE</strong>: By creating a project in Watson Studio a free tier <code>Object Storage</code> service and <code>Watson Machine Learning</code> service will be created in your IBM Cloud account. Select the <code>Free</code> storage type to avoid fees.</p>
+</blockquote>
+</li>
+<li><p>Upon a successful project creation, you are taken to the project <code>Overview</code> tab. Take note of the <code>Assets</code> and <code>Settings</code> tabs, we&apos;ll be using them to associate our project with any external assets (datasets and notebooks) and any IBM cloud services.</p>
+<p><a href="https://raw.githubusercontent.com/IBM/pattern-utils/master/watson-studio/overview-empty.png" target="_blank"><img src="https://raw.githubusercontent.com/IBM/pattern-utils/master/watson-studio/overview-empty.png" alt="studio-project-dashboard"></a></p>
+</li>
+</ul>
+<h4 id=""> </h4>
+<h4 id="2-add-services-to-the-project">2. Add services to the project</h4>
+<ul>
+<li>Associate the project with Watson services. To create an instance of each service, go to the <code>Settings</code> tab in the new project and scroll down to <code>Associated Services</code>. Click <code>Add service</code> and select <code>Watson</code> from the drop-down menu. Add the service using the free <code>Lite</code> plan. Repeat for each of the services used in this pattern:<ul>
+<li>Visual Recognition</li>
+<li>Natural Language Understanding</li>
+<li>Tone Analyzer</li>
+</ul>
+</li>
+<li>Once your services are created, copy the credentials and save them for later. You will use them in your Jupyter notebook.<ul>
+<li>Use the upper-left <code>&#x2630;</code> menu, and select <code>Services &gt; Watson Services</code>.</li>
+<li>Use the 3-dot actions menu to select <code>Manage in IBM Cloud</code> for each service.</li>
+<li>Copy each <code>API Key</code> and <code>URL</code> to use in the notebook.</li>
+</ul>
+</li>
+</ul>
+<h4 id=""> </h4>
+<h4 id="3-create-the-notebook-in-watson-studio">3. Create the notebook in Watson Studio</h4>
+<ul>
+<li><p>From the new project <code>Overview</code> tab, click <code>+ Add to project</code> on the top right and choose the <code>Notebook</code> asset type.</p>
+<p><a href="https://raw.githubusercontent.com/IBM/pattern-utils/master/watson-studio/add-assets-notebook.png" target="_blank"><img src="https://raw.githubusercontent.com/IBM/pattern-utils/master/watson-studio/add-assets-notebook.png" alt="studio-project-dashboard"></a></p>
+</li>
+<li><p>Fill in the following information:</p>
+<ul>
+<li>Select the <code>From URL</code> tab. [1]</li>
+<li>Enter a <code>Name</code> for the notebook and optionally a description. [2]</li>
+<li>For <code>Select runtime</code> select the <code>Default Python 3.6 Free</code> option. [3]</li>
+<li><p>Under <code>Notebook URL</code> provide the following url [4]:</p>
+<pre><code class="lang-text">https://raw.githubusercontent.com/IBM/pixiedust-facebook-analysis/master/notebooks/pixiedust_facebook_analysis.ipynb
+</code></pre>
+</li>
+</ul>
+<p><a href="https://github.com/IBM/pixiedust-facebook-analysis/blob/master/doc/source/images/new_notebook.png" target="_blank"><img src="https://github.com/IBM/pixiedust-facebook-analysis/raw/master/doc/source/images/new_notebook.png" alt="new\_notebook"></a></p>
+</li>
+<li><p>Click the <code>Create Notebook</code> button.</p>
+<blockquote>
+<p><strong>TIP:</strong> Your notebook will appear in the <code>Notebooks</code> section of the <code>Assets</code> tab.</p>
+</blockquote>
+</li>
+</ul>
+<h4 id=""> </h4>
+<h4 id="4-add-credentials">4. Add credentials</h4>
+<p>Find the notebook cell after <code>1.5. Add Service Credentials From IBM Cloud for Watson Services</code>.</p>
+<p>Replace the six placeholder values with information from the <code>Service Credentials</code> tab for each service.</p>
+<p><a href="https://github.com/IBM/pixiedust-facebook-analysis/blob/master/doc/source/images/add_credentials.png" target="_blank"><img src="https://github.com/IBM/pixiedust-facebook-analysis/raw/master/doc/source/images/add_credentials.png" alt="add\_credentials"></a></p>
+<blockquote>
+<p><strong>Note</strong>: This cell is marked as a <code>hidden_cell</code> because it will contain sensitive credentials.</p>
+</blockquote>
+<h4 id=""> </h4>
+<h4 id="5-add-the-csv-file">5. Add the CSV file</h4>
+<p><strong>Add the CSV file to the notebook</strong></p>
+<p>Use <code>Find and Add Data</code> (look for the <code>10/01</code> icon) and its <code>Files</code> tab. From there you can click <code>browse</code> and add a <code>.csv</code> file from your computer.</p>
+<p><a href="https://github.com/IBM/pixiedust-facebook-analysis/blob/master/doc/source/images/add_file.png" target="_blank"><img src="https://github.com/IBM/pixiedust-facebook-analysis/raw/master/doc/source/images/add_file.png" alt="add\_file"></a></p>
+<blockquote>
+<p><strong>Note</strong>: If you don&apos;t have your own data, you can use our example by cloning this git repo. Look in the <code>data</code> directory.</p>
+</blockquote>
+<p><strong>Insert to code</strong></p>
+<p>Find the notebook cell after <code>2.1 Load data from Object Storage</code>. Place your cursor after <code># **Insert to code &gt; Insert pandas DataFrame**</code>. Make sure this cell is selected before inserting code.</p>
+<p>Using the file that you added above (under the <code>10/01</code> Files tab), use the <code>Insert to code</code> drop-down menu. Select <code>Insert pandas DataFrame</code> from the drop-down menu.</p>
+<p><a href="https://github.com/IBM/pixiedust-facebook-analysis/blob/master/doc/source/images/insert_to_code.png" target="_blank"><img src="https://github.com/IBM/pixiedust-facebook-analysis/raw/master/doc/source/images/insert_to_code.png" alt="insert\_to\_code"></a></p>
+<blockquote>
+<p><strong>Note</strong>: This cell is marked as a <code>hidden_cell</code> because it contains sensitive credentials.</p>
+</blockquote>
+<p><a href="https://github.com/IBM/pixiedust-facebook-analysis/blob/master/doc/source/images/inserted_pandas.png" target="_blank"><img src="https://github.com/IBM/pixiedust-facebook-analysis/raw/master/doc/source/images/inserted_pandas.png" alt="inserted\_pandas"></a></p>
+<p><strong>Fix-up df variable name</strong></p>
+<p>The inserted code includes a generated method with credentials and then calls the generated method to set a variable with a name like <code>df_data_1</code>. If you do additional inserts, the method can be re-used and the variable will change (e.g. <code>df_data_2</code>).</p>
+<p>Later in the notebook, we set <code>df = df_data_1</code>. So you might need to fix the variable name <code>df_data_1</code> to match your inserted code or vice versa.</p>
+<p><strong>Add file credentials</strong></p>
+<p>We want to write the enriched file to the same container that we used above. So now we&apos;ll use the same file drop-down to insert credentials. We&apos;ll use them later when we write out the enriched CSV file.</p>
+<p>After the <code>df</code> setup, there is a cell to enter the file credentials. Place your cursor after the <code># insert credentials for file - Change to credentials_1</code> line. Make sure this cell is selected before inserting credentials.</p>
+<p>Use the CSV file&apos;s drop-down menu again. This time select <code>Insert Credentials</code>.</p>
+<p><a href="https://github.com/IBM/pixiedust-facebook-analysis/blob/master/doc/source/images/insert_file_credentials.png" target="_blank"><img src="https://github.com/IBM/pixiedust-facebook-analysis/raw/master/doc/source/images/insert_file_credentials.png" alt="insert\_file\_credentials"></a></p>
+<blockquote>
+<p><strong>Note</strong>: This cell is marked as a <code>hidden_cell</code> because it contains sensitive credentials.</p>
+</blockquote>
+<p><strong>Fix-up credentials variable name</strong></p>
+<p>The inserted code includes a dictionary with credentials assigned to a variable with a name like <code>credentials_1</code>. It may have a different name (e.g. <code>credentials_2</code>). Rename it or reassign it if needed. The notebook code assumes it will be <code>credentials_1</code>.</p>
+<h3 id=""> </h3>
+<h3 id="6-run-the-notebook">6. Run the notebook</h3>
+<p>When a notebook is executed, what is actually happening is that each code cell in the notebook is executed, in order, from top to bottom.</p>
+<p>Each code cell is selectable and is preceded by a tag in the left margin. The tag format is <code>In [x]:</code>. Depending on the state of the notebook, the <code>x</code> can be:</p>
+<ul>
+<li>A blank, this indicates that the cell has never been executed.</li>
+<li>A number, this number represents the relative order this code step was executed.</li>
+<li>A <code>*</code>, this indicates that the cell is currently executing.</li>
+</ul>
+<p>There are several ways to execute the code cells in your notebook:</p>
+<ul>
+<li>One cell at a time.<ul>
+<li>Select the cell, and then press the <code>Play</code> button in the toolbar.</li>
+</ul>
+</li>
+<li>Batch mode, in sequential order.<ul>
+<li>From the <code>Cell</code> menu bar, there are several options available. For example, you can <code>Run All</code> cells in your notebook, or you can <code>Run All Below</code>, that will start executing from the first cell under the currently selected cell, and then continue executing all cells that follow.</li>
+</ul>
+</li>
+<li>At a scheduled time.<ul>
+<li>Press the <code>Schedule</code> button located in the top right section of your notebook panel. Here you can schedule your notebook to be executed once at some future time, or repeatedly at your specified interval.</li>
+</ul>
+</li>
+</ul>
+<h3 id=""> </h3>
+<h3 id="7-analyze-the-results">7. Analyze the results</h3>
+<h4 id=""> </h4>
+<h4 id="part-i---enrich">Part I - Enrich</h4>
+<p>If you walk through the cells, you will see that we demonstrated how to do the following in Part I:</p>
+<ul>
+<li>Install external libraries from PyPI</li>
+<li>Create clients to connect to Watson cognitive services</li>
+<li>Load data from a local CSV file to a pandas DataFrame (via Object Storage)</li>
+<li>Do some data manipulation with pandas</li>
+<li>Use BeautifulSoup</li>
+<li>Use Natural Language Understanding</li>
+<li>Use Tone Analyzer</li>
+<li>Use Visual Recognition</li>
+<li>Save the enriched data in a CSV file in Object Storage</li>
+</ul>
+<h4 id=""> </h4>
+<h4 id="part-ii---data-preparation">Part II - Data Preparation</h4>
+<p>In Part II, we used pandas to create multiple DataFrames from our main enriched DataFrame. After slicing and dicing and cleaning, these new DataFrames are ready for PixieDust to use.</p>
+<h4 id=""> </h4>
+<h4 id="part-iii---analyze">Part III - Analyze</h4>
+<p>In Part III, we analyze the results by exploring and visualizing the metrics with PixieDust.</p>
+<p>After all the prep work done earlier, you&apos;ll see that there is almost no code needed here (thanks to PixieDust). We just use one-liners like this:</p>
+<pre><code class="lang-text">display(&lt;data-frame&gt;)
+</code></pre>
+<p>You should also notice that we used <code>display(tones)</code> in two different cells, but the result was two different charts. How can that happen? Well, we used cell metadata to tell PixieDust how to display the data. Notice the <code>Edit Metadata</code> button on each cell. If you don&apos;t see it, use the menu <code>View &gt; Cell Toolbar &gt; Edit Metadata</code> to make it visible. If you look at the metadata for the first two charts, you&apos;ll see how we got a bar chart and a pie chart.</p>
+<p><strong>PixieDust is interactive!</strong> This is where we explore to find out what the enriched data will tell us.</p>
+<p>Use the <code>Options</code> button to change the chart settings. The first chart shows post consumption by the detected emotion in the article. Notice how changing the aggregation type from SUM to AVG gives you a very different conclusion. You can also change it to COUNT to see the frequency of each emotion, but when you do that the metric no longer matters.</p>
+<p>Explore by trying the following:</p>
+<ul>
+<li>Use social tone as the key instead of emotion tone (or both).</li>
+<li>Try other metrics such as lifetime negative feedback from users.</li>
+<li>Try the different renderers.</li>
+<li>Try different chart types (and a grid).</li>
+</ul>
+<p>The right combination will give you insights into the impact of your facebook posts. Once you uncover the insights, find the best presentation to convince others.</p>
+<h3 id=""> </h3>
+<h3 id="8-save-your-work">8. Save your work</h3>
+<h4 id=""> </h4>
+<h4 id="how-to-save-your-work">How to save your work</h4>
+<p>Under the <code>File</code> menu, there are several ways to save your notebook:</p>
+<ul>
+<li><code>Save</code> will simply save the current state of your notebook, without any version information.</li>
+<li><code>Save Version</code> will save your current state of your notebook with a version tag that contains a date and time stamp. Up to 10 versions of your notebook can be saved, each one retrievable by selecting the <code>Revert To Version</code> menu item.</li>
+</ul>
+<h3 id=""> </h3>
+<h3 id="sample-output">Sample output</h3>
+<p>The example output in <a href="https://github.com/IBM/pixiedust-facebook-analysis/blob/master/examples" target="_blank"><code>examples</code></a> has embedded JavaScript for PixieDust charts. View it via <a href="https://nbviewer.jupyter.org/github/IBM/pixiedust-facebook-analysis/blob/master/examples/pixiedust_facebook_analysis.ipynb" target="_blank">nbviewer</a></p>
+<blockquote>
+<p><strong>Note</strong>: Some interactive functionality might not work in the saved example. Run the notebook for full functionality. To see the code and markdown cells without output, you can view <a href="https://github.com/IBM/pixiedust-facebook-analysis/blob/master/notebooks/pixiedust_facebook_analysis.ipynb" target="_blank">notebooks/pixiedust_facebook_analysis.ipynb</a> with the Github viewer.</p>
+</blockquote>
+<h3 id=""> </h3>
+<h3 id="links">Links</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=UIkjFo9o3vI" target="_blank">Demo on Youtube</a></li>
+<li><a href="https://pixiedust.github.io/pixiedust/" target="_blank">PixieDust Documentation</a></li>
+<li><a href="https://github.com/pixiedust/pixiedust" target="_blank">PixieDust GitHub Repo</a></li>
+<li><a href="https://developers.facebook.com/docs/analytics" target="_blank">Facebook Analytics Developer Docs</a></li>
+</ul>
+<h3 id=""> </h3>
+<h3 id="learn-more">Learn more</h3>
+<ul>
+<li><strong>Artificial Intelligence Code Patterns</strong>: Enjoyed this Code Pattern? Check out our other <a href="https://developer.ibm.com/technologies/artificial-intelligence/" target="_blank">AI Code Patterns</a></li>
+<li><strong>Data Analytics Code Patterns</strong>: Enjoyed this Code Pattern? Check out our other <a href="https://developer.ibm.com/technologies/data-science/" target="_blank">Data Science Code Patterns</a></li>
+<li><strong>AI and Data Code Pattern Playlist</strong>: Bookmark our <a href="https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde" target="_blank">playlist</a> with all of our Code Pattern videos</li>
+</ul>
+<h3 id=""> </h3>
+<h3 id="license">License</h3>
+<p>This code pattern is licensed under the Apache License, Version 2. Separate third-party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the <a href="https://developercertificate.org/" target="_blank">Developer Certificate of Origin, Version 1.1</a> and the <a href="https://www.apache.org/licenses/LICENSE-2.0.txt" target="_blank">Apache License, Version 2</a>.</p>
+<p><a href="https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN" target="_blank">Apache License FAQ</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="lab-9-create-a-banking-chatbot.html" class="navigation navigation-prev " aria-label="Previous page: Lab 9 - Create a banking chatbot">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="gitbook-link-and-qr-code.html" class="navigation navigation-next " aria-label="Next page: GitBook Link and QR Code">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Lab 10 - Uncover insights from Facebook data with PixieDust and Watson services","level":"1.11","depth":1,"next":{"title":"GitBook Link and QR Code","level":"1.12","depth":1,"path":"gitbook-link-and-qr-code.md","ref":"gitbook-link-and-qr-code.md","articles":[]},"previous":{"title":"Lab 9 - Create a banking chatbot","level":"1.10","depth":1,"path":"lab-9-create-a-banking-chatbot.md","ref":"lab-9-create-a-banking-chatbot.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lab-10-uncover-insights-from-facebook-data-with-pixiedust-and-watson-services.md","mtime":"2020-01-09T03:45:03.282Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-09T04:00:53.333Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
